@@ -1,4 +1,5 @@
 import 'package:animation/moviebg/movie_bg.dart';
+import 'package:animation/transition_page/transition_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,6 +11,7 @@ class MyApp extends StatelessWidget {
 
   final Map<String, Widget> screensList = {
     'moviebg.jpeg': MovieBG(),
+    'transitionlocation.jpg': TransitionCard(),
   };
 
   @override
