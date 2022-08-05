@@ -14,7 +14,7 @@ class ExpandedContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.all(Radius.circular(10)),
         ),
@@ -26,9 +26,9 @@ class ExpandedContent extends StatelessWidget {
             CustomHero(
                 tag: HeroTag.addressLine1(location),
                 child: Text(location.addressLine1)),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             buildAddressRating(location: location),
-            SizedBox(height: 12),
+            const SizedBox(height: 12),
             buildReview(location: location)
           ],
         ),
@@ -44,7 +44,7 @@ class ExpandedContent extends StatelessWidget {
             tag: HeroTag.addressLine2(location),
             child: Text(
               location.addressLine2,
-              style: TextStyle(color: Colors.black45),
+              style: const TextStyle(color: Colors.black45),
             ),
           ),
           CustomHero(

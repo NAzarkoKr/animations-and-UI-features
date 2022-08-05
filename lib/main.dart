@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
 
   final Map<String, Widget> screensList = {
     'moviebg.jpeg': MovieBG(),
-    'transitionlocation.jpg': TransitionCard(),
+    'transitionlocation.jpg': const TransitionCard(),
   };
 
   @override

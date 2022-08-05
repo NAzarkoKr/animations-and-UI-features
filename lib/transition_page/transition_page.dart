@@ -1,5 +1,3 @@
-import 'package:animation/transition_page/model/location.dart';
-import 'package:animation/transition_page/widgets/location_card.dart';
 import 'package:animation/transition_page/widgets/locations_list.dart';
 import 'package:flutter/material.dart';
 
@@ -12,22 +10,22 @@ class TransitionCard extends StatelessWidget {
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.transparent,
-          title: Text('INTERESTS'),
+          title: const Text('INTERESTS'),
           centerTitle: true,
           actions: [
             IconButton(
-              icon: Icon(Icons.search_outlined),
+              icon: const Icon(Icons.search_outlined),
               onPressed: () {},
             ),
           ],
           leading: IconButton(
-            icon: Icon(Icons.arrow_back),
+            icon: const Icon(Icons.arrow_back),
             onPressed: () {
               Navigator.of(context).pop();
             },
           ),
         ),
-        body: LocationsList(),
+        body: const LocationsList(),
         bottomNavigationBar: buildBottomNavigation(),
       );
 
@@ -38,7 +36,7 @@ class TransitionCard extends StatelessWidget {
         backgroundColor: Colors.transparent,
         showSelectedLabels: false,
         showUnselectedLabels: false,
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.pin_drop_outlined),
             label: '',

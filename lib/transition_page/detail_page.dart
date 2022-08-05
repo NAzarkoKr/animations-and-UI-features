@@ -21,16 +21,16 @@ class DetailPage extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
-        title: Text('INTERESTS'),
+        title: const Text('INTERESTS'),
         centerTitle: true,
         actions: [
           IconButton(
-            icon: Icon(Icons.search_outlined),
+            icon: const Icon(Icons.search_outlined),
             onPressed: () {},
           ),
         ],
         leading: IconButton(
-          icon: Icon(Icons.close),
+          icon: const Icon(Icons.close),
           onPressed: () {
             Navigator.of(context).pop();
           },

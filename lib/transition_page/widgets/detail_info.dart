@@ -12,20 +12,20 @@ class DetailInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(12),
+      padding: const EdgeInsets.all(12),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           CustomHero(
               tag: HeroTag.addressLine1(location),
               child: Text(location.addressLine1)),
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
           CustomHero(
               tag: HeroTag.addressLine2(location),
               child: Text(location.addressLine2)),
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
           CustomHero(

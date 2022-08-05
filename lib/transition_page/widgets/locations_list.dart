@@ -30,9 +30,9 @@ class _LocationsListState extends State<LocationsList> {
           ),
           Text(
             '${pageIndex + 1}/${locations.length}',
-            style: TextStyle(color: Colors.white70),
+            style: const TextStyle(color: Colors.white70),
           ),
-          SizedBox(height: 12)
+          const SizedBox(height: 12)
         ],
       );
 }

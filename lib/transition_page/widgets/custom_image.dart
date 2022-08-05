@@ -17,11 +17,11 @@ class ImageWidget extends StatelessWidget {
     final size = MediaQuery.of(context).size;
 
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 16),
+      padding: const EdgeInsets.symmetric(horizontal: 16),
       height: size.height * 0.5,
       width: size.width * 0.8,
       child: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           boxShadow: [
             BoxShadow(color: Colors.black26, blurRadius: 2, spreadRadius: 1),
           ],
@@ -50,7 +50,7 @@ class ImageWidget extends StatelessWidget {
         child: CustomHero(
           tag: HeroTag.image(location.urlImage),
           child: ClipRRect(
-            borderRadius: BorderRadius.all(Radius.circular(8)),
+            borderRadius: const BorderRadius.all(Radius.circular(8)),
             child: Image.asset(location.urlImage, fit: BoxFit.cover),
           ),
         ),
@@ -58,7 +58,7 @@ class ImageWidget extends StatelessWidget {
 
   Widget buildTopText() => Text(
         location.name,
-        style: TextStyle(
+        style: const TextStyle(
           color: Colors.white,
           fontWeight: FontWeight.bold,
           fontSize: 20,
