@@ -1,4 +1,5 @@
 import 'package:animation/moviebg/movie_bg.dart';
+import 'package:animation/progress_indicators/progress_indicators.dart';
 import 'package:animation/transition_page/transition_page.dart';
 import 'package:flutter/material.dart';
 
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
   final Map<String, Widget> screensList = {
     'moviebg.jpeg': MovieBG(),
     'transitionlocation.jpg': const TransitionCard(),
+    'progressindicators.jpg': const ProgressIndicators(),
   };
 
   @override
