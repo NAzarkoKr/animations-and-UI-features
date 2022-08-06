@@ -1,3 +1,4 @@
+import 'package:animation/left_navigation_rail/left_navigation_bar.dart';
 import 'package:animation/moviebg/movie_bg.dart';
 import 'package:animation/progress_indicators/progress_indicators.dart';
 import 'package:animation/transition_page/transition_page.dart';
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
     'moviebg.jpeg': MovieBG(),
     'transitionlocation.jpg': const TransitionCard(),
     'progressindicators.jpg': const ProgressIndicators(),
+    'leftnavigationrail.jpg': const LeftNavigationRail(),
   };
 
   @override
